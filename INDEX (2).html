@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+/* Basic form styling */
+form {
+  max-width: 400px; /* Set maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Style for form fields */
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding */
+  margin: 5px 0 15px 0; /* Add margins */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 3px; /* Add border radius */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+  width: 100%; /* Set width to 100% */
+  background-color: #4CAF50; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 3px; /* Add border radius */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Change button background color on hover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style for the error message */
+.error {
+  color: red; /* Error text color */
+}
+</style>
+</head>
+<body>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="12e6515f-2180-44cc-bc1e-5ab415c1f81f">
+  <h2>Register</h2>
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required>
+
+  <label for="confirm_password">Confirm Password</label>
+  <input type="password" id="confirm_password" name="confirm_password" required>
+
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+  <button type="submit">REGISTER</button>
+</form>
+
+</body>
+</html>
